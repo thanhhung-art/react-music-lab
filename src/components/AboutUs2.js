@@ -26,7 +26,7 @@ function AboutUs2() {
 					</div>
 				</div>
 				<div className="about-us-2__image">
-					<img src={image2} alt="about-us-2" width="100%" height="auto"/>
+					<img src={image2} alt="about-us-2"/>
 				</div>
 			</div>
 		</section>

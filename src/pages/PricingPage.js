@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Price from "../components/Price";
 import Features from "../components/Features";
 
-const PricingHeader = styled.section`
+const Header = styled.div`
 	background: #1A1E1E;
 	padding: 6rem;
 	text-align: center;
@@ -15,9 +15,9 @@ const PricingHeader = styled.section`
 function PricingPage() {
 	return (
 		<>
-			<PricingHeader>
+			<Header>
 				Pricing
-			</PricingHeader>
+			</Header>
 			<Price />
 			<Features />
 		</>

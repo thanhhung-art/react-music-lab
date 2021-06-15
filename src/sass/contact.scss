@@ -1,0 +1,48 @@
+.contact {
+	padding: 6rem 0;
+	.google-map {
+		height: 500px;
+		background: #ccc;
+		margin-bottom: 6rem;
+	}
+	h4 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		margin-bottom: 2rem;
+	}
+	&__form {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&__col {
+
+			&__1 {
+				flex-basis: 70%;
+			}
+			&__2 {
+				flex-basis: 27%;
+				padding-top: 4rem;
+				ul {
+					li {
+						display: flex;
+						margin-bottom: 2rem;
+						gap: 1.3rem;
+						i {
+							font-size: 1.7rem;
+							margin-top: .5rem;
+							width: 1rem;
+							text-align: center;
+							padding-right: .5rem;
+						}
+						p {
+
+							span {
+								color: $--text-gray;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

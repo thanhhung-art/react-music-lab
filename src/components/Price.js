@@ -20,7 +20,7 @@ function Price() {
 							<li><span>&#10003;</span><p>With advertising</p></li>
 							<li><span>&#10003;</span><p>30 skips per day</p></li>
 						</ul>
-						<button className="btn">GET FREE</button>
+						<button className="btn btn__primary btn__pill">GET FREE</button>
 					</div>
 				</div>
 				<div className="table">
@@ -35,7 +35,7 @@ function Price() {
 							<li><span>&#10003;</span><p>With advertising</p></li>
 							<li><span>&#10003;</span><p>30 skips per day</p></li>
 						</ul>
-						<button className="btn">GET FREE</button>
+						<button className="btn btn__primary btn__pill">GET FREE</button>
 					</div>
 				</div>
 			</div>

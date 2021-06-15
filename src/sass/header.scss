@@ -18,7 +18,6 @@
 	&__btns {
 		padding: 1.5rem 0 3rem;
 		button {
-			padding: 1rem 2rem;
 			margin: 0 .5rem;
 			border: none;
 			outline: none;
@@ -33,9 +32,9 @@
 }
 
 .btn1 {
-	animation: leftToRight .7s linear;
+	animation: leftToRight .8s linear;
 }
 
 .btn2 {
-	animation: rightToLeft .7s linear;
+	animation: rightToLeft .8s linear;
 }

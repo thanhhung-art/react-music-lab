@@ -5,22 +5,20 @@ import Home from "./pages/Home";
 import FeaturesPage from "./pages/FeaturesPage";
 import PricingPage from "./pages/PricingPage";
 import BlogPage from "./pages/BlogPage";
+import BlogDetails from "./pages/BlogDetails";
+import Element from "./pages/Element";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  useRouteMatch,
-  useParams
+  Link
 } from "react-router-dom";
-
-
 
 function App() {
 
   const scrollToTop = () => {
-    let btnUp = document.getElementById("up");
     let rootElement = document.documentElement;
 
     rootElement.scrollTo({
@@ -30,12 +28,10 @@ function App() {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll",changeDisplayBtnUp);
-    window.addEventListener("scroll",changeNavbarPosition)
+    window.addEventListener("scroll",handleNavbarAndBtnUp);
 
     return () => {
-      window.removeEventListener("scroll",changeDisplayBtnUp);
-      window.removeEventListener("scroll", changeNavbarPosition);
+      window.addEventListener("scroll",handleNavbarAndBtnUp);
     }
   });
 
@@ -57,16 +53,16 @@ function App() {
               <li className="navbar__links__item"><Link to="/pricing">Pricing</Link></li>
               <li className="navbar__links__item"><Link>Donwload</Link></li>
               <li className="navbar__links__item parent">
-                 <p>Blog</p>
+                 <p><Link to="/blog">Blog</Link></p>
                   <ul className="sub__links">
                     <li className="sub__links__item"><Link to="/blog">Blog</Link></li>
-                    <li className="sub__links__item"><Link>Blog Detail</Link></li>
-                    <li className="sub__links__item"><Link>Elements</Link></li>
+                    <li className="sub__links__item"><Link to="/blog-details">Blog Details</Link></li>
+                    <li className="sub__links__item"><Link to="/elements">Elements</Link></li>
                   </ul> 
                </li>
               <li className="navbar__links__item"><Link to="/contact">Contact</Link></li>
             </ul>
-            <a href="#" className="btn navbar__btn">SIGN IN</a>
+            <a href="#" className="btn btn__primary navbar__btn btn__pill">SIGN IN</a>
           </nav>
         </div>  
       </div>
@@ -85,6 +81,18 @@ function App() {
           <BlogPage />
         </Route>
 
+        <Route path="/blog-details">
+          <BlogDetails />
+        </Route>
+
+        <Route path="/elements">
+          <Element />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+
         <Route path="/">
           <Home />
         </Route>
@@ -99,23 +107,15 @@ function App() {
 export default App;
 
 
-function changeDisplayBtnUp (){
+function handleNavbarAndBtnUp (){
+  let navbar = document.getElementById("navbar");
   let up = document.getElementById("up");
-  if(window.pageYOffset >= 600){
+  if(window.pageYOffset >= 500){
+    navbar.classList.add("navbar-change");
     up.classList.add("btn-up-visible");
   }
   else {
-    up.classList.remove("btn-up-visible");
-  }
-}
-
-function changeNavbarPosition(){
-  let navbar = document.getElementById("navbar");
-
-  if(window.pageYOffset >= 500){
-    navbar.classList.add("navbar-change");
-  }
-  else {
     navbar.classList.remove("navbar-change");
+    up.classList.remove("btn-up-visible");
   }
 }

@@ -14,7 +14,7 @@
 @keyframes titleUp {
 	0% {
 		opacity: 0;
-		transform: translateY(100px);
+		transform: translateY(150px);
 	}
 
 	100% {
@@ -25,7 +25,7 @@
 
 @keyframes leftToRight {
 	from {
-		transform: translateX(-100px);
+		transform: translateX(-200px);
 	}
 
 	to {
@@ -35,7 +35,7 @@
 
 @keyframes rightToLeft {
 	0% {
-		transform: translateX(100px);
+		transform: translateX(200px);
 	}
 
 	100% {

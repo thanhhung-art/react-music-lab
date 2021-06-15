@@ -1,0 +1,388 @@
+.elements {
+	padding: 6rem 0;
+	h4 {
+		font-size: 1.4rem;
+		font-weight: 400;
+		margin-bottom: 1.5rem;
+	}
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+	.component {
+		margin-top: 2rem;
+		border-bottom: 1px solid $--bg-line;
+		padding-bottom: 4rem;
+	}
+	.text {
+		font-size: 1rem;
+	}
+	.sample__buttons {
+		.btn {
+			padding: .5rem 1.7rem;
+			margin-right: 1rem;
+			font-size: .8rem;
+			a {
+				color: $--blue;
+			}
+		}
+		.wrap_buttons {
+			margin-top: 3rem;
+			.row__1 {
+				margin-bottom: 1rem;
+			}
+		}
+		.large-to-small {
+			margin-top: 3rem;
+			.row__1 {
+				margin-bottom: 1rem;
+			}
+			button {
+				margin-right: 1rem;
+			}
+		}
+	}
+	.left-aligned {
+		&__content {
+			display: flex;
+			gap: 2rem;
+		}
+	}
+	.right-aligned {
+		&__content {
+			display: flex;
+			gap: 2rem;
+		}
+	}
+	.definition {
+		&__col {
+			display: flex;
+			gap: 1.3rem;
+		}
+	}
+	.table {
+		table {
+			background: $--bg-gray;
+			padding: 1rem .5rem;
+			overflow-x: scroll;
+			color: rgba( 0, 0, 0,.7);
+			display: block;
+			min-width: 100%;
+			col {
+				&:nth-child(1) { 
+					width: 100px;
+					min-width: 100px;
+				}
+				&:nth-child(2) {
+					width: 200px;
+					min-width: 200px;
+				}
+				&:nth-child(3) {
+					width: 500px;
+					min-width: 500px;
+				}
+				&:nth-child(4) {
+					width: 470px;
+					min-width: 470px; 
+				}
+			}
+			tr {
+				text-align: center;
+				td {
+					padding: .8rem 0;
+					border-top: 1px solid $--bg-line;
+				}
+			}
+			h4 {
+				font-size: 1rem;
+				margin-bottom: .5rem;
+				color: $--blue;
+			}
+			.countries__header {
+				padding-left: 2rem;
+			}
+			.col__flag {
+				display: flex;
+				gap: 1rem;
+				align-items: center;
+				padding-left: 5rem;
+				justify-content: center;
+			}
+			.col__percent {
+				text-align: left;
+				.per {
+					height: .3rem;
+					&__100 {
+					width: 20rem;
+					background: $--percent-blue;
+					}
+					&__40 {
+						width: 7rem;
+						background: $--percent-pink;
+						&__2{
+							width: 7rem;
+							background: $--percent-purple;
+						}
+					}
+					&__60 {
+						width: 12rem;
+						background: $--percent-orange;
+					}
+					&__70 {
+						width: 15rem;
+						background: $--percent-green;
+						&__2 {
+							width: 15rem;
+							background: $--percent-pink;
+						}
+					}
+					&__50 {
+						width: 10rem;
+						background: $--percent-green;
+					}
+					&__90 {
+						width: 17rem;
+						background: $--percent-blue;
+					}
+				}
+			}
+		}
+	}
+	.gallery {
+		&__images {
+			display: flex;
+			gap: 1.4rem;
+			flex-wrap: wrap;
+			width: 100%;
+			img {
+				width: 100%;
+				height: 14rem;
+				object-fit: cover;
+			}
+			.flex-3 {
+				flex-basis: calc(100% - 68%);
+			}
+			.flex-2 {
+				flex-basis: 48.7%;
+			}
+		}
+	}
+	.lists {
+		display: flex;
+		justify-content: space-between;
+		.col{
+			h3 {
+				font-size: 1.4rem;
+				font-weight: 400;
+				margin-bottom: 2rem;
+			}
+			&-1 {
+				.title {
+					font-size: 1.4rem;
+					font-weight: 400;
+					margin-bottom:2rem;
+				}
+				h2,h3,h4,h5,h6 {
+					color: $--text-gray;
+					font-weight: 500;
+				}
+				h2 {
+					font-size: 2.2rem;
+				}
+				h3 {
+					font-size: 1.8rem;
+					margin-bottom: 0;
+				}
+				h4 {
+					font-size: 1.6rem;
+					margin-bottom: 0;
+				}
+				h5 {
+					font-size: 1.4rem;
+					margin-bottom: 0;
+				}
+				h6 {
+					font-size: 1.2rem;
+				}
+				li:last-child h6 {
+					font-size: 1rem;
+				}
+			}
+			&-2 {
+				ul {
+					list-style: circle;
+					li {
+						font-weight: 300;
+						ul {
+							margin-left: 2rem;
+							li {
+								ul {
+									margin-left: 4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			&-3 {
+				ol {
+					li {
+						color: $--text-gray;
+						ol {
+							margin-left: 2rem;
+							li {
+								ol {
+									margin-left: 4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.form-elements {
+		margin-top: 2rem;
+		display: flex;
+		&__col-1 {
+			flex-basis: 70%;
+			input,select,textarea {
+				border: none;
+				outline: none;
+				background: $--bg-line;
+				width: 100%;
+				margin-bottom: .5rem;
+				padding: .7rem 1.2rem;
+				font-size: 1rem;
+				border-radius: 5px;
+			}
+			textarea {
+				height: 6rem;
+				resize: none;
+				margin-bottom: 0;
+			}
+			select {
+				color: $--text-gray;
+				border: 1px solid $--text-gray;
+				option {
+					background: #fff;
+					border: none;
+					&:hover {
+						background: $--text-gray;
+					}
+				}
+			}
+			.input-color:focus {
+				outline: 1px solid orange;
+			}
+		}
+		&__col-2 {
+			margin-left: 1rem;
+			select {
+				outline: none;
+				border: none;
+			}
+			h3 {
+				font-size: 1.4rem;
+				font-weight: 400;
+				margin-bottom:1.8rem;
+			}
+			select {
+				width: 100%;
+				padding: .5rem 1rem;
+				background: $--bg-line;
+			}
+			input[type=checkbox] {
+				cursor: pointer;
+			}
+			input[type=radio] {
+				cursor: pointer;
+			}
+			ul {
+				width: 300px;
+				li {
+					display: flex;
+					justify-content: space-between;
+					gap: 2rem;
+					margin-bottom: 1.3rem;
+				}
+				h3 {
+					font-size: 1.4rem;
+					font-weight: 400;
+					margin: 1rem 0;
+				}
+				span {
+					color: $--text-gray;
+				}
+			}
+			.switch {
+				position: relative;
+				display: inline-block;
+				width: 40px;
+				height: 19px;
+				cursor: pointer;
+			}
+
+			.switch input {
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+
+			.slider {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: #ccc;
+				transition: .4s;
+				border-radius: 34px;
+			}
+
+			.slider:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 17px;
+				background: #fff;
+				transition: .4s;
+				left: 1px;
+				top: 1px;
+				border-radius: 50%;
+			}
+
+			input:checked + .slider {
+				background: #2196F3;
+			}
+
+			input:focus  + .slider {
+				box-shadow: 0 0 1px #2196F3;
+			}
+
+			input:checked + .slider:before {
+				transform: translateX(22px);
+			}
+			.checkboxs {
+				.custom-checkbox {
+					position: relative;
+					width: 1rem;
+					height: 1rem;
+					border: 1px solid #333;
+					cursor: pointer;
+					input {
+						position: absolute;
+						opacity: 0;
+						cursor: pointer;
+						height: 0;
+						width: 0;
+						&:checked + custom-checkbox {
+							background: #ccc;
+						}
+					}
+				}
+			}
+		}
+	}
+}
