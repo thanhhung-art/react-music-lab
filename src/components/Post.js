@@ -4,7 +4,7 @@ function Post (props) {
 	return (
 		<div className="post">
 			<div className="post__image">
-				<img src={props.image} alt="image" className="image-post"/>
+				<img src={props.image} alt="post" className="image-post"/>
 				<div className="calendar">
 					<div className="date">15</div>
 					<div className="month">Jan</div>

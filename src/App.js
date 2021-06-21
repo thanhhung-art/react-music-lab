@@ -9,6 +9,8 @@ import BlogDetails from "./pages/BlogDetails";
 import Element from "./pages/Element";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/scrollToTop";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,7 +19,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-
   const scrollToTop = () => {
     let rootElement = document.documentElement;
 
@@ -35,6 +36,11 @@ function App() {
     }
   });
 
+  function handleMenuMobile(i) {
+    let menu = document.getElementsByClassName("menu-mobile")[i];
+    menu.classList.toggle("hide-menu");
+  }
+
   return (
     <Router>
       <div className="up" id="up" onClick={scrollToTop}>
@@ -51,7 +57,7 @@ function App() {
               <li className="navbar__links__item"><Link to="/">Home</Link></li>
               <li className="navbar__links__item"><Link to="/features">Features</Link></li>
               <li className="navbar__links__item"><Link to="/pricing">Pricing</Link></li>
-              <li className="navbar__links__item"><Link>Donwload</Link></li>
+              <li className="navbar__links__item"><a href="#0">Donwload</a></li>
               <li className="navbar__links__item parent">
                  <p><Link to="/blog">Blog</Link></p>
                   <ul className="sub__links">
@@ -62,38 +68,67 @@ function App() {
                </li>
               <li className="navbar__links__item"><Link to="/contact">Contact</Link></li>
             </ul>
-            <a href="#" className="btn btn__primary navbar__btn btn__pill">SIGN IN</a>
+            <a href="#0" className="btn btn__primary navbar__btn btn__pill">SIGN IN</a>
+            <div className="btn-nav" onClick={() => handleMenuMobile(0)}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
+            </div>
+            <div className="navbar__mobile menu-mobile hide-menu">
+              <ul className="navbar__mobile__links">
+                <li className="navbar__mobile__links__item"><Link to="/">Home</Link></li>
+                <li className="navbar__mobile__links__item"><Link to="/features">Features</Link></li>
+                <li className="navbar__mobile__links__item"><Link to="/pricing">Pricing</Link></li>
+                <li className="navbar__mobile__links__item"><a href="#0">Donwload</a></li>
+                <li className="navbar__mobile__links__item parent" onClick={() => handleMenuMobile(1)}>
+                  <p><a href="#blog">Blog</a></p>
+                    <ul className="menu-mobile hide-menu">
+                      <li><Link to="/blog">Blog</Link></li>
+                      <li><Link to="/blog-details">Blog Details</Link></li>
+                      <li><Link to="/elements">Elements</Link></li>
+                    </ul> 
+                </li>
+                <li className="navbar__mobile__links__item"><Link to="/contact">Contact</Link></li>
+              </ul>
+            </div>
           </nav>
         </div>  
       </div>
       {/* pages */}
       <Switch>
 
-        <Route path="/features">
+        <Route path="/features" exact>
+          <ScrollToTop />
           <FeaturesPage />
         </Route>
 
          <Route path="/pricing">
+          <ScrollToTop />
           <PricingPage />
         </Route>
 
         <Route path="/blog">
+          <ScrollToTop />
           <BlogPage />
         </Route>
 
         <Route path="/blog-details">
+          <ScrollToTop />
           <BlogDetails />
         </Route>
 
         <Route path="/elements">
+          <ScrollToTop />
           <Element />
         </Route>
 
         <Route path="/contact">
+          <ScrollToTop />
           <Contact />
         </Route>
 
         <Route path="/">
+          <ScrollToTop />
           <Home />
         </Route>
 
@@ -106,6 +141,7 @@ function App() {
 
 export default App;
 
+// functions
 
 function handleNavbarAndBtnUp (){
   let navbar = document.getElementById("navbar");

@@ -10,11 +10,14 @@ import Tools from "../components/Tools";
 
 const Header = styled.div`
 	background: #1A1E1E;
-	padding: 6rem;
+	padding: 6rem 1rem;
 	text-align: center;
 	color: #fff;
 	font-size: 3rem;
-	font-weight: bold;	
+	font-weight: bold;
+	@media (max-width: 700px) {
+		font-size: 2.5rem;
+	} 
 `;
 
 function BlogPage() {

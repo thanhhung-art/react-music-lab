@@ -1,0 +1,144 @@
+@media (max-width: 1175px) and (min-width: 700px) {
+	.container {
+		padding: 0 2rem;
+	}
+	.navbar {
+		nav {
+			padding: .7rem 1rem;
+			position: relative;
+		}
+		&__brand {
+			flex: 1;
+		}
+		&__links {
+			display: none;
+		}
+		&__btn {
+			padding: 1rem 1.5rem;
+			margin-right: 1rem;
+		}
+		&__mobile {
+			display: block;
+			color: #fff;
+		}
+	}
+	.btn-nav {
+		display: flex;
+	}
+
+	.header {
+		padding: 5rem 2rem;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.about-us-1 {
+		.container {
+			flex-direction: column;
+		}
+	}
+	.about-us-2 {
+		.container {
+			gap: 3rem;
+			flex-direction: column;
+		}
+		&__image {
+			img {
+				width: auto;
+				height: auto;
+				position: static;
+				transform: none;
+				top: 0;
+			}
+		}
+	}
+	.features {
+		text-align: center;
+		padding: 6rem 0;
+		&__text {
+			max-width: 600px;
+			margin: 2rem auto 3rem;
+			font-size: 1rem;
+		}
+		&__list {
+			max-width: 800px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li {
+				width: 300px;
+				h4 {
+					font-size: 1.2rem;
+					margin: 1rem 0 .8rem;
+					font-weight: 500;
+				}
+				p {
+					font-size: .8rem;
+					color: rgba(0,0,0,0.5);
+				}
+			}
+		}
+	}
+	.wrap-blog {
+		display: flex;
+		padding: 6rem 2rem;
+		flex-direction: column;
+		.col__post {
+			flex-basis: 100%;
+			margin-bottom: 2rem;
+		}
+	}
+	.tools {
+		max-width: 100%;
+		&__tag-clouds {
+			.wrap-tags {
+				max-width: 100%;
+			}
+		}
+		&__instagram-feeds {
+			.wrap-image {
+				max-width: 100%;
+			}
+		}
+	}
+	.blog-details {
+		flex-direction: column;
+		.col__post {
+			padding: 6rem 0;
+		}
+	}
+	.elements {
+		.left-aligned__content, .right-aligned__content {
+			img {
+				width: 120px;
+				height: 120px;
+			}
+		}
+	}
+	.contact {
+		padding: 6rem 2rem;
+		&__form {
+			flex-direction: column;
+		}
+	}
+	.footer {
+		padding: 6rem;
+		&__header {
+			gap: 3rem;
+			&__col1 {
+				flex-basis: 50%;
+			}
+			&__col2 {
+				flex-basis: 20%;
+			}
+			&__col3 {
+				flex-basis: 60%;
+			}
+			&__col4 {
+				flex-basis: 20%;
+			}
+		}
+	}
+}

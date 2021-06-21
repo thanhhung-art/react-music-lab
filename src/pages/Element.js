@@ -415,7 +415,7 @@ function Buttons (props){
 				<button className={`btn ${props.shape} btn__info`}>Info</button>
 				<button className={`btn ${props.shape} btn__warning`}>Warning</button>
 				<button className={`btn ${props.shape} btn__danger`}>Danger</button>
-				<button className={`btn ${props.shape} btn__link`}><a href="#">Link</a></button>
+				<button className={`btn ${props.shape} btn__link`}><a href="#0">Link</a></button>
 				<button className={`btn ${props.shape} btn__disabled`} Disable >Disable</button>
 			</div>
 			<div className="row__2">
@@ -425,7 +425,7 @@ function Buttons (props){
 				<button className={`btn ${props.shape} btn__reverse__info`}>Info</button>
 				<button className={`btn ${props.shape} btn__reverse__warning`}>Warning</button>
 				<button className={`btn ${props.shape} btn__reverse__danger`}>Danger</button>
-				<button className={`btn ${props.shape} btn__reverse__link`}><a href="#">Link</a></button>
+				<button className={`btn ${props.shape} btn__reverse__link`}><a href="#0">Link</a></button>
 				<button className={`btn ${props.shape} btn__disabled`} Disabled >Disable</button>
 			</div>
 		</div>

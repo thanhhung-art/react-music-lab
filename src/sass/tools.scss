@@ -164,3 +164,17 @@
 		cursor: pointer;
 	}
 }
+
+.btn-nav {
+	width: 30px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	display: none;
+	.bar {
+		background: #fff;
+		height: 3px;
+	}
+}

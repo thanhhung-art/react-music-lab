@@ -18,11 +18,10 @@
 		align-items: center;
 		flex-wrap: wrap;
 		padding: .7rem 6rem;
-		
 	}
 	&__links {
 		display: flex;
-			gap: 4rem;
+		gap: 4rem;
 			&__item {
 				a {
 					font-size: 1rem;
@@ -34,6 +33,35 @@
 		}
 	&__btn {
 		padding: 1rem 1.5rem;
+	}
+	&__mobile {
+		position: absolute;
+		background-color: $--bg-navbar;
+		width: 97%;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: none;
+		padding: .5rem 3rem 1rem;
+		overflow: hidden;
+		transition: all .7s;
+		height: auto;
+		&__links {
+			&__item {
+				a {
+					font-size: 1rem;
+				}
+				ul {
+					margin-left: 2rem;
+				}
+				&:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+		li {
+			margin-top: .4rem;
+		}
 	}
 }
 
@@ -53,7 +81,6 @@
 }
 
 .parent {
-	
 	p {
 		font-size: 1rem;
 		color: #fff;
@@ -68,9 +95,33 @@
 	}
 }
 
+.parent {
+	overflow: hidden;
+}
+
 .navbar-change {
 	position: fixed;
 	left: 0;
 	right: 0;
 	animation: navbarDown .5s linear;
+}
+
+.btn-nav {
+	width: 30px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	display: none;
+	.bar {
+		background: #fff;
+		height: 3px;
+		border-radius: 5px;
+	}
+}
+
+.hide-menu {
+	height: 0;
+	padding: 0 3rem;
 }

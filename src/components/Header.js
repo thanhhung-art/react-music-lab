@@ -8,13 +8,13 @@ function Header() {
 			<h1 className="mx-center">Open the world of music. It's all here</h1>
 			<div className="header__btns mx-center">
 				<button className="btn btn__primary btn__pill btn1">
-					<a href="#">Download for desktop</a>
+					<a href="#0">Download for desktop</a>
 					</button>
 				<button className="btn btn__primary btn__pill btn2">
-					<a href="#">Download for mobile</a>
+					<a href="#0">Download for mobile</a>
 				</button>
 			</div>
-			<img src={image} className="mx-center" alt="image" />
+			<img src={image} className="mx-center" alt="show" />
 		</section>
 	)
 }

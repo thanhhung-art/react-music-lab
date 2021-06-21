@@ -32,28 +32,28 @@ function Tools() {
 				<h3>Recent Post</h3>
 				<ul>
 					<li>
-						<img src={image1} />
+						<img src={image1} alt="recent-post" />
 						<div className="content">
 							<h4>From life was you fiss...</h4>
 							<span>January 12, 2019</span>
 						</div>
 					</li>
 					<li>
-						<img src={image2} />
+						<img src={image2} alt="recent-post" />
 						<div className="content">
 							<h4>The Amazing Hubble</h4>
 							<span>02 Hours ago</span>
 						</div>
 					</li>
 					<li>
-						<img src={image3} />
+						<img src={image3} alt="recent-post" />
 						<div className="content">
 							<h4>Astronomy Or Astrology</h4>
 							<span>03 Hours ago</span>
 						</div>
 					</li>
 					<li>
-						<img src={image4} />
+						<img src={image4} alt="recent-post" />
 						<div className="content">
 							<h4>Asteroids telescope</h4>
 							<span>01 hours ago</span>
@@ -77,12 +77,12 @@ function Tools() {
 			<div className="tools__instagram-feeds components">
 				<h3>Instagram Feeds</h3>
 				<div className="wrap-image">
-					<img src={image5}  alt="image"/>
-					<img src={image6}  alt="image"/>
-					<img src={image7}  alt="image"/>
-					<img src={image8}  alt="image"/>
-					<img src={image9}  alt="image"/>
-					<img src={image10} alt="image"/>
+					<img src={image5}  alt="instagram"/>
+					<img src={image6}  alt="instagram"/>
+					<img src={image7}  alt="instagram"/>
+					<img src={image8}  alt="instagram"/>
+					<img src={image9}  alt="instagram"/>
+					<img src={image10} alt="instagram"/>
 				</div>
 			</div>
 			<div className="tools__newsletter components">

@@ -7,7 +7,7 @@ function AboutUs1() {
 		<section className="about-us-1">
 			<div className="container">
 				<div className="about-us-1__image">
-					<img src={image} alt="image" width="100%" height="auto"/>
+					<img src={image} alt="about-us" />
 				</div>
 				<div className="about-us-1__content">
 					<div className="wrap-content">
