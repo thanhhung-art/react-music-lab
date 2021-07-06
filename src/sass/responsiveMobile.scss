@@ -11,6 +11,9 @@
     .text {
         font-size: .9rem;
     }
+    .quote__wrap {
+        padding: 1rem;
+    }
 	.navbar {
 		nav {
 			padding: .7rem 1rem;
@@ -308,12 +311,49 @@
         }
     }    
     .elements {
-		.left-aligned__content, .right-aligned__content {
-			img {
-				width: 120px;
-				height: 120px;
-			}
-		}
+        .sample__buttons {
+            .wrap__buttons {
+                margin-top:  1rem;
+            }
+            .btn {
+                padding: .5rem 1.3rem;
+                margin-bottom:  .5rem;;
+                margin-right:  .5rem;
+            }
+            .large-to-small {
+                button {
+                    margin-right:  .5rem;
+                    margin-bottom:  .5rem;
+                }
+            }
+        }
+        .left-aligned__content {
+            flex-direction:  column;
+            img {
+                width:  100%;
+                height: auto;
+            }
+        }
+        .right-aligned__content {
+            flex-direction:  column;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .definition__col {
+            flex-direction: column;
+        }
+        .gallery__images {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .lists {
+            flex-direction:  column;
+        }
+        .form-elements {
+            flex-direction: column;
+        }
 	}
     .contact {
 		padding: 3rem 2rem;

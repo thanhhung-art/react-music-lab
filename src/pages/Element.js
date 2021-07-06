@@ -24,7 +24,11 @@ const Header = styled.div`
 	text-align: center;
 	color: #fff;
 	font-size: 3rem;
-	font-weight: bold;	
+	font-weight: bold;
+	@media (max-width: 700px) {
+		font-size: 2.5rem;
+		padding: 3rem;
+	} 
 `;
 
 function Element() {

@@ -10,6 +10,9 @@ const Header = styled.div`
 	color: #fff;
 	font-size: 3rem;
 	font-weight: bold;	
+	@media (max-width: 700px) {
+		font-size: 2.5rem;
+	} 
 `;
 
 export default function Contact() {
