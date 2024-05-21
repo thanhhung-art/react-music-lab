@@ -1,0 +1,44 @@
+.about-us-2 {
+	background: $--bg-gray;
+	padding: 8rem 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		.wrap-content {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__content {
+		flex-basis: 45%;
+		display: flex;
+		
+		h2 {
+			margin-bottom: 2rem;
+		}
+		&__list {
+			li {
+				display: flex;
+				align-items: center;
+				gap: 2rem;
+				margin-top: 1rem;
+				background: #fff;
+				padding: 1.2rem;
+				p {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	&__image {
+		flex-basis: 45%;
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}

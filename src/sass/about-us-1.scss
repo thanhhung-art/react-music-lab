@@ -1,0 +1,47 @@
+.about-us-1 {
+	padding: 6rem 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.wrap-content {
+		flex-direction: column;
+	}
+	&__content {
+		flex-basis: 45%;
+		display: flex;
+		align-items: center;
+		img {
+			width: 88px;
+			height: auto;
+		}
+		h2 {
+			max-width: 500px;
+			margin-top: 1.6rem;
+		}
+		&__list {
+			li {
+				display: flex;
+				gap: 2rem;
+				align-items: center;
+				margin-top: 1.6rem;
+				span {
+					min-width: 4rem;
+					min-height: 4rem;
+					border-radius: 50%;
+					background: $--bg-gradient;
+					color: #fff;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				p {
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	&__image {
+		flex-basis: 45%;
+	}
+}

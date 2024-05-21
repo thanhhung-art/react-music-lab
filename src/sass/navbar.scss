@@ -1,0 +1,140 @@
+.hold-position {
+  position: relative;
+  height: 5rem;
+  background: $--bg-navbar;
+}
+
+.navbar {
+  background: $--bg-navbar;
+  transition: all 0.1s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  font-size: 0.8rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.7rem 6rem;
+  }
+  &__links {
+    display: flex;
+    gap: 4rem;
+    &__item {
+      a {
+        font-size: 1rem;
+        &:hover {
+          color: $--text-gray;
+        }
+      }
+    }
+  }
+  &__btn {
+    padding: 1rem 1.5rem;
+  }
+  &__mobile {
+    position: absolute;
+    background-color: $--bg-navbar;
+    width: 97%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 0.5rem 3rem 1rem;
+    overflow: hidden;
+    transition: all 0.7s;
+    height: auto;
+    &__links {
+      .sub__links__item div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+          transition: transform 0.3s;
+        }
+      }
+      &__item {
+        a {
+          font-size: 1rem;
+        }
+        ul {
+          margin-left: 2rem;
+        }
+        &:last-child {
+          margin-top: 0;
+        }
+      }
+    }
+    li {
+      margin-top: 0.4rem;
+    }
+  }
+}
+
+.sub__links {
+  position: absolute;
+  min-width: 110px;
+  bottom: -6rem;
+  visibility: hidden;
+  transition: all 0.3s linear;
+  padding: 0.5rem 2rem;
+  background: $--bg-navbar;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  transform: translateX(-30px);
+  &__item {
+    margin: 0.5rem 0;
+  }
+}
+
+.parent {
+  p {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  &:hover p {
+    color: $--text-gray;
+  }
+  &:hover .sub__links {
+    visibility: visible;
+  }
+}
+
+.parent {
+  overflow: hidden;
+}
+
+.navbar-change {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.menu-mobile {
+  transition: height 0.7s;
+}
+
+.btn-nav {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+  .bar {
+    background: #fff;
+    height: 3px;
+    border-radius: 5px;
+  }
+}
+
+.hide-menu {
+  height: 0;
+  padding: 0 3rem;
+  overflow: hidden;
+}

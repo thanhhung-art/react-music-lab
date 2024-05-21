@@ -1,0 +1,41 @@
+.header {
+	background: $--bg-primary;
+	padding: 5rem 0;
+	text-align: center;
+	height: 100vh;
+	h4 {
+		font-size: 1.3rem;
+		color: $--text-gray;
+		margin-bottom: .6rem;
+	}
+	h1 {
+		font-size: 3rem;
+		color: #fff;
+		margin: 1.7rem 0 4rem;
+		max-width: 40rem;
+		margin: auto;
+		animation: titleUp .7s linear;
+	}
+	&__btns {
+		padding: 1.5rem 0 3rem;
+		button {
+			margin: 0 .5rem;
+			border: none;
+			outline: none;
+			&:last-child {
+				background: #323636;
+				&:hover {
+					background: $--bg-gradient;
+				}
+			}
+		}
+	}
+}
+
+.btn1 {
+	animation: leftToRight 0.65s linear;
+}
+
+.btn2 {
+	animation: rightToLeft 0.65s linear;
+}

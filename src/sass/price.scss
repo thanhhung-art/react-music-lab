@@ -1,0 +1,80 @@
+.pricing {
+	text-align: center;
+	background: $--bg-gray;
+	padding: 6rem;
+
+	&__title {
+		h2 {
+			max-width: 35rem;
+			margin: 0 auto;
+		}
+
+		p {
+			max-width: 43rem;
+			margin: 2rem auto 3rem;
+			font-size: 1rem;
+		}
+	}
+
+	&__tables {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+
+		.table {
+			padding: 0 2rem 2rem;
+			border-radius: 1rem;
+			border: 1px solid rgba(0,0,0,.1);
+			background: #fff;
+			width: 400px;
+			transition: .3s;
+			.row__first {
+				padding: 2rem 0 1.3rem;
+				border-bottom: 1px solid rgba(0,0,0,.2);
+				text-align: left;
+				h4 {
+					font-size: 1.2rem;
+				}
+				p {
+					color: $--blue;
+					font-size: 1.2rem;
+				}
+				span {
+					font-size: 1.6rem;
+				}
+			}
+			.row__two {
+				text-align: left;
+				ul {
+					font-size: 1.2rem;
+					li {
+						display: flex;
+						gap: .8rem;
+						margin-top: 1.4rem;
+						color: #665050;
+					}
+				}
+				.btn {
+					margin-top: 1.4rem;
+					padding: 1rem 3.6rem;
+					border: none;
+					font-size: 1rem;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+			&:hover {
+				background: #1A1E1E;
+				color: #fff;
+				.row__two {
+					ul {
+						li {
+							color: $--text-gray;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
