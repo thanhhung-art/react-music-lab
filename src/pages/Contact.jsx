@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Form from "../components/Form";
 import GoogleMap from "../components/GoogleMap";
+import useCloseMobileMenu from "../hooks/closeMobileMenu";
 
 const Header = styled.div`
   background: #1a1e1e;
@@ -15,6 +16,7 @@ const Header = styled.div`
 `;
 
 export default function Contact() {
+  useCloseMobileMenu();
   return (
     <>
       <Header>Contact</Header>

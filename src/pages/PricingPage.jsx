@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Price from "../components/Price";
 import Features from "../components/Features";
+import useCloseMobileMenu from "../hooks/closeMobileMenu";
 
 const Header = styled.div`
 	background: #1A1E1E;
@@ -16,15 +17,15 @@ const Header = styled.div`
 `;
 
 function PricingPage() {
-	return (
-		<>
-			<Header>
-				Pricing
-			</Header>
-			<Price />
-			<Features />
-		</>
-	)
+  useCloseMobileMenu();
+	
+  return (
+    <>
+      <Header>Pricing</Header>
+      <Price />
+      <Features />
+    </>
+  );
 }
 
 export default PricingPage;

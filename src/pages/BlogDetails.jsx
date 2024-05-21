@@ -8,6 +8,7 @@ import author from "../images/xauthor.png.pagespeed.ic.ODzYv6n44a.png";
 import comment1 from "../images/xcomment_1.png.pagespeed.ic.nxxwmEk3HK.webp";
 import comment2 from "../images/xcomment_2.png.pagespeed.ic.rv1J-BlfMh.webp";
 import comment3 from "../images/xcomment_3.png.pagespeed.ic.1O6TaovPw0.webp";
+import useCloseMobileMenu from "../hooks/closeMobileMenu";
 
 const Header = styled.div`
   background: #1a1e1e;
@@ -23,6 +24,7 @@ const Header = styled.div`
 `;
 
 function BlogDetails() {
+  useCloseMobileMenu()
   return (
     <>
       <Header>Blog Details</Header>

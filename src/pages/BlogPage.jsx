@@ -6,6 +6,7 @@ import image4 from "../images/xsingle_blog_4.jpg.pagespeed.ic.sPLUurA5SD.webp";
 import image5 from "../images/xsingle_blog_5.jpg.pagespeed.ic.iAJ-fvqdoP.webp";
 import Post from "../components/Post";
 import Tools from "../components/Tools";
+import useCloseMobileMenu from "../hooks/closeMobileMenu";
 
 const Header = styled.div`
 	background: #1A1E1E;
@@ -21,6 +22,7 @@ const Header = styled.div`
 `;
 
 function BlogPage() {
+  useCloseMobileMenu()
   return (
     <>
       <Header>Blog</Header>

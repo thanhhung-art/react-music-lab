@@ -17,6 +17,7 @@ import child5 from "../images/xg5.jpg.pagespeed.ic.wCO8ntXysx.webp";
 import child6 from "../images/xg6.jpg.pagespeed.ic.vGS0Ufdzrp.webp";
 import child7 from "../images/xg2.jpg.pagespeed.ic.Ku7DSeq7Ty.webp";
 import child8 from "../images/xg8.jpg.pagespeed.ic.Z3RoWR-Bbd.webp";
+import useCloseMobileMenu from "../hooks/closeMobileMenu";
 
 const Header = styled.div`
   background: #1a1e1e;
@@ -32,6 +33,7 @@ const Header = styled.div`
 `;
 
 function Element() {
+  useCloseMobileMenu()
   return (
     <>
       <Header>Elements</Header>
